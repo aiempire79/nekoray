@@ -3,6 +3,9 @@ name: Nekoray build matrix - cmake
 on:
   workflow_dispatch:
     inputs:
+      tag:
+        description: 'Release Tag'
+        required: true
       publish:
         description: 'Publish: If want ignore'
         required: false
